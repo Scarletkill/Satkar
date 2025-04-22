@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+:root {
+  --primaryColor: hsl(119, 77%, 25%);
+  --primaryColorLight: hsl(125, 65%, 41%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 5rem;
+}
+
+.houses .houses-icon {
+  padding-top: 0%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.houses .houses-icon .icon-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.houses .houses-icon .icon-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+.houses .houses-icon .icon-item a img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.houses .houses-icon .icon-item a .icon-title {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.houses .Sponser-ad {
+  margin: 30px 0;
+}
+.houses .Sponser-ad .sponsers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.houses .Sponser-ad .sponsers a img {
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.houses .Sponser-ad .sponsers a img:hover {
+  transform: scale(1.05);
+}
+.houses .secTitle {
+  justify-content: center;
+  font-style: oblique;
+}
+.houses .subject {
+  justify-content: center;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+}
+.houses .container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-right: 40%;
+  justify-content: center;
+  height: 100;
+}
+.houses .container a img {
+  display: flex;
+  box-sizing: content-box;
+  flex-wrap: wrap;
+  flex-direction: column;
+}/*# sourceMappingURL=Middle.css.map */

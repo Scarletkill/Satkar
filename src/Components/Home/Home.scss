@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --primaryColor: hsl(119, 77%, 25%);
+    --primaryColorLight: hsl(125, 65%, 41%);
+    --bgColor: hsl(0, 0%, 100%);
+    --formColor: hsl(20, 42%, 87%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.6rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 5rem;
+}
+
+.Home {
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    top: 0;
+
+    .Homeimg {
+        position: absolute;
+        height: 80%;
+        width: 100%;
+        z-index: -1;
+
+        img {
+            justify-content: flex-start;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            filter: blur(2px);
+        }
+    }
+
+    .Container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .dropdown {
+        background-color: rgba(174, 255, 124, 0.8); // optional for contrast
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .dropdown-row {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        justify-content: center;
+        padding-top: 30%;
+
+    }
+
+    .green-container {
+        background-color: var(--primaryColorLight);
+        padding: 0.4rem 1rem;
+        border-radius: 2rem;
+        display: inline-block;
+        color: white;
+    }
+
+    .styled-input {
+        border: none;
+        outline: none;
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        font-size: 1rem;
+        background-color: var(--primaryColorLight);
+        color: white;
+    }
+
+    .styled-input::placeholder {
+        color: white;
+        opacity: 1;
+        /* Make sure it's fully visible */
+    }
+
+
+    .whatdrop-item {
+        position: relative;
+
+        .Btn-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+    }
+
+    .typedrop-item {
+        position: relative;
+
+        .Btn-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            color: white;
+            background: rgb(14, 14, 14);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+    }
+
+    .cover-bg {
+        position: relative;
+        background-color: transparent;
+        justify-items: start;
+        color: white;
+        size: var(--smallestFontSize);
+        padding: 18px;
+        display: flex;
+        flex-direction: row;
+
+        .coverscamera {
+            .icon {
+                padding-right: 0.5rem;
+            }
+
+            padding-left: 60%;
+        }
+
+        a {
+            color: aliceblue;
+            padding-left: 0.5rem;
+        }
+    }
+
+}
