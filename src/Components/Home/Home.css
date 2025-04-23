@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 :root {
-  --primaryColor: hsl(119, 77%, 25%);
+  --primaryColor: hsl(119, 65%, 66%);
   --primaryColorLight: hsl(125, 65%, 41%);
   --bgColor: hsl(0, 0%, 100%);
   --formColor: hsl(20, 42%, 87%);
@@ -24,6 +24,7 @@
   height: 95vh;
   width: 100%;
   top: 0;
+  margin-bottom: -80px;
 }
 .Home .Homeimg {
   position: absolute;
@@ -107,7 +108,6 @@
   top: 100%;
   left: 0;
   color: white;
-  background: rgb(14, 14, 14);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

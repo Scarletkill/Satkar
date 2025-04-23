@@ -10,9 +10,6 @@ import goth from '../../assests/icons/goth-ghar.png';
 import kaala from '../../assests/icons/kaala-ghar.png';
 import baskota from '../../assests/supported-by/baskota-consulting.png';
 import sriyog from '../../assests/supported-by/sriyog-logo.png';
-import letang from '../../assests/places/letang.jpg';
-import taplejung from '../../assests/places/taplejung.jpg';
-
 const Middle = () => {
   return (
     <div className='houses'>
@@ -66,15 +63,6 @@ const Middle = () => {
       <div className='subject'>
         नेपालमा लुकेका कुनाहरू अवलोकन गर्नुहोस् । #Freedom of Living.
       </div>
-      <div className='container'>
-        <a>
-          <img src={letang} alt='place-img' />
-        </a>
-        <a>
-          <img src={taplejung} alt='place-img' />
-        </a>
-      </div>
-
     </div>
   )
 };

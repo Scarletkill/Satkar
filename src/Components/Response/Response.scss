@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --primaryColor: hsl(119, 77%, 25%);
+    --primaryColorLight: hsl(125, 65%, 41%);
+    --bgColor: hsl(0, 0%, 100%);
+    --formColor: hsl(20, 42%, 87%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.6rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 5rem;
+}
+
+.Response {
+    .Pratikriya {
+        padding-top: 5rem;
+        border: 10rem;
+        justify-items: center;
+        align-items: center;
+
+        h {
+            font-size: var(--biggestFontSize);
+            font-style: bold;
+            border-radius: var(--borderRadius);
+            font-weight: bold;
+        }
+
+        p {
+            padding-top: 2.5rem;
+            font-size: var(--h3FontSize);
+            text-align: center;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+
+        .container {
+            display: flex;
+            border: 18px;
+            padding: 5rem;
+
+            .profile-card {
+                margin: 3rem;
+
+                img {
+                    border-radius: 50%;
+                    justify-content: center;
+                    filter: grayscale(100%);
+                }
+
+                h1 {
+                    font-size: var(--h1FontSize);
+                    font-weight: bold;
+                    text-align: center;
+                    padding-top: 1rem;
+                }
+
+                h2 {
+                    font-size: var(--h3FontSize);
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 0.5rem;
+                }
+
+                p {
+                    text-align: center;
+                    letter-spacing: 0.5px;
+
+                }
+
+            }
+        }
+    }
+}

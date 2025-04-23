@@ -15,54 +15,55 @@ const Home = () => {
       <div className='Homeimg'>
         <img src={Nepal} alt='Homepagebanner' />
       </div>
+      <form >
+        <div className='dropdown-row'>
+          <div className="green-container">
+            <input
+              type="text"
+              placeholder="के खोज्दै हुनु हुन्छ ?"
+              className="styled-input"
+            />
+          </div>
+          <div className='whatdrop-item'>
+            <button className='Btn flex' onClick={() => setwhatDowndrop(!whatDowndrop)}>
+              कहाँ खोज्दै हुनु हुन्छ ?
+              <IoIosArrowDropdown className={`icon ${whatDowndrop ? 'rotate' : ''}`} />
+            </button>
+            {whatDowndrop && (
+              <div className='Btn-content'>
+                <ul>
+                  <li>लेटांग</li>
+                  <li>दोधारा</li>
+                  <li>जेफाले</li>
+                  <li>ईलाम</li>
+                  <li>ताप्लेजुंग</li>
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className='typedrop-item'>
+            <button className='Btn flex' onClick={() => settypeDropdown(!typeDropdown)}>
+              पाहुनाघरको प्रकार
+              <IoIosArrowDropdown className={`icon ${typeDropdown ? 'rotate' : ''}`} />
+            </button>
+            {typeDropdown && (
+              <div className='Btn-content'>
+                <ul>
+                  <li>पाहुनाघर</li>
+                  <li>मामाघर</li>
+                  <li>ढिकी घर</li>
+                  <li>फारमघर</li>
+                  <li>संबाद घर</li>
+                </ul>
+              </div>
+            )}
+          </div>
 
-      <div className='dropdown-row'>
-        <div className="green-container">
-          <input
-            type="text"
-            placeholder="के खोज्दै हुनु हुन्छ ?"
-            className="styled-input"
-          />
-        </div>
-        <div className='whatdrop-item'>
-          <button className='Btn flex' onClick={() => setwhatDowndrop(!whatDowndrop)}>
-            कहाँ खोज्दै हुनु हुन्छ ?
-            <IoIosArrowDropdown className={`icon ${whatDowndrop ? 'rotate' : ''}`} />
+          <button className='Btn flex'>
+            खोज्नुहोस् <CiSearch className='icon' />
           </button>
-          {whatDowndrop && (
-            <div className='Btn-content'>
-              <ul>
-                <li>लेटांग</li>
-                <li>दोधारा</li>
-                <li>जेफाले</li>
-                <li>ईलाम</li>
-                <li>ताप्लेजुंग</li>
-              </ul>
-            </div>
-          )}
         </div>
-        <div className='typedrop-item'>
-          <button className='Btn flex' onClick={() => settypeDropdown(!typeDropdown)}>
-            पाहुनाघरको प्रकार
-            <IoIosArrowDropdown className={`icon ${typeDropdown ? 'rotate' : ''}`} />
-          </button>
-          {typeDropdown && (
-            <div className='Btn-content'>
-              <ul>
-                <li>पाहुनाघर</li>
-                <li>मामाघर</li>
-                <li>ढिकी घर</li>
-                <li>फारमघर</li>
-                <li>संबाद घर</li>
-              </ul>
-            </div>
-          )}
-        </div>
-
-        <button className='Btn flex'>
-          खोज्नुहोस् <CiSearch className='icon' />
-        </button>
-      </div>
+      </form>
 
       <div className='cover-bg'>
         <div className='covers'>

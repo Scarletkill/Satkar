@@ -57,6 +57,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+  background-color: rgb(125, 119, 119);
 }
 .houses .Sponser-ad .sponsers a img {
   height: 100px;
@@ -69,25 +70,10 @@
 }
 .houses .secTitle {
   justify-content: center;
-  font-style: oblique;
 }
 .houses .subject {
   justify-content: center;
   font-style: normal;
   display: flex;
   flex-direction: row;
-}
-.houses .container {
-  display: flex;
-  flex-direction: row;
-  padding-top: 40px;
-  padding-right: 40%;
-  justify-content: center;
-  height: 100;
-}
-.houses .container a img {
-  display: flex;
-  box-sizing: content-box;
-  flex-wrap: wrap;
-  flex-direction: column;
 }/*# sourceMappingURL=Middle.css.map */
