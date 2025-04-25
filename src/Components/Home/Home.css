@@ -107,7 +107,8 @@
   position: absolute;
   top: 100%;
   left: 0;
-  color: white;
+  color: black;
+  background: rgb(249, 245, 245);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

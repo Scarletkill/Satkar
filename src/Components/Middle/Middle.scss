@@ -46,6 +46,7 @@
                     width: 40px;
                     height: 40px;
                     object-fit: contain;
+                    filter: grayscale(100%)
                 }
 
                 .icon-title {
@@ -90,4 +91,12 @@
         flex-direction: row;
 
     }
+}
+
+.left {
+    padding-top: 1rem;
+}
+
+.right {
+    padding-top: 1rem;
 }

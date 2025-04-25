@@ -15,7 +15,6 @@ const Home = () => {
       <div className='Homeimg'>
         <img src={Nepal} alt='Homepagebanner' />
       </div>
-      <form >
         <div className='dropdown-row'>
           <div className="green-container">
             <input
@@ -63,7 +62,6 @@ const Home = () => {
             खोज्नुहोस् <CiSearch className='icon' />
           </button>
         </div>
-      </form>
 
       <div className='cover-bg'>
         <div className='covers'>

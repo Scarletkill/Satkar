@@ -5,6 +5,7 @@ import second from '../../assests/testimonials/2.jpg';
 import third from '../../assests/testimonials/3.jpg';
 import { BsQuote } from "react-icons/bs";
 import { MdOutlineStarBorderPurple500 } from "react-icons/md";
+import { MdOutlineStarPurple500 } from "react-icons/md";
 
 
 const Response = () => {
@@ -30,6 +31,13 @@ const Response = () => {
               <BsQuote className='icon' />
               प्रविधिको विकास संगै एक आपसमा जोडिन सजिलो भएको छ, सामाजिक संजाल संगै समाज परिवर्तनकारी सोच सँग सुरु भएको पाहुनाघरको विचार राम्रो लाग्यो
             </p>
+            <li>
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarBorderPurple500 />
+            </li>
           </section>
           <section className='profile-card'>
             <img src={second} alt='profile' />
@@ -43,6 +51,13 @@ const Response = () => {
               <BsQuote className='icon' />
               घरमै बसेर उधमशीलता साथै अतिथि सत्कारले देशको कुना कुनामा लुकेर रहेको स्थानमा पर्यटन प्रबर्दन गर्नमा ठुलो भूमिका खेल्दछ ।
             </p>
+            <li>
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarBorderPurple500 />
+            </li>
 
           </section>
           <section className='profile-card'>
@@ -57,27 +72,16 @@ const Response = () => {
               <BsQuote className='icon' />
               घुम्ने भनेको आफुलाई मन पर्ने ठाउँ हो, सबै ठाउँमा पाहुनाघर भएको खण्डमा जो सुकै पनि जुनसुकै स्थान पुग्न, त्यसबारेमा जानकारी लिन सक्नेछन ।
             </p>
-            <MdOutlineStarBorderPurple500 className='icon' />
+            <li>
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarPurple500 />
+              <MdOutlineStarBorderPurple500 />
+            </li>
           </section>
         </div>
       </div>
-      {/* <div className='comment'>
-        <div className='first'>
-          <img src={first} alt='profile' />
-          <h>
-            भगवती बर्तौला
-          </h>
-          <h1>
-            चितवन
-          </h1>
-          <p>
-            प्रविधिको विकास संगै एक आपसमा जोडिन सजिलो भएको छ, सामाजिक संजाल संगै समाज परिवर्तनकारी सोच सँग सुरु भएको पाहुनाघरको विचार राम्रो लाग्यो
-          </p>
-
-        </div>
-
-      </div> */}
-
     </div>
   )
 }

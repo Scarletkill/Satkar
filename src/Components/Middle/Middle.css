@@ -43,6 +43,7 @@
   height: 40px;
   -o-object-fit: contain;
      object-fit: contain;
+  filter: grayscale(100%);
 }
 .houses .houses-icon .icon-item a .icon-title {
   margin-top: 8px;
@@ -76,4 +77,12 @@
   font-style: normal;
   display: flex;
   flex-direction: row;
+}
+
+.left {
+  padding-top: 1rem;
+}
+
+.right {
+  padding-top: 1rem;
 }/*# sourceMappingURL=Middle.css.map */

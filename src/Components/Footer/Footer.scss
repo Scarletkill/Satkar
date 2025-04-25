@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --primaryColor: hsl(119, 77%, 25%);
+    --primaryColorLight: hsl(125, 65%, 41%);
+    --bgColor: hsl(0, 0%, 100%);
+    --formColor: hsl(20, 42%, 87%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.6rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 5rem;
+}
+
+.Footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 2rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.Footer {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.Footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Footer:hover img {
+    filter: grayscale(0%)
+}
+
+/* Left side big card spanning 2 rows */
+.blog {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    width: 45rem;
+    height: 31rem;
+}
+
+/* Top right corner card */
+.news {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+    width: 31rem;
+}
+
+/* Bottom row: left card */
+.recipe {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    width: 15rem;
+    height: 15rem;
+}
+
+/* Bottom row: right card */
+.travel {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    width: 15rem;
+    height: 15rem;
+}
+
+.layout {
+    z-index: 10;
+
+    .button {
+        background-color: rgb(62, 60, 60);
+
+    }
+}
