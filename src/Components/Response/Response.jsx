@@ -29,9 +29,9 @@ const Response = () => {
             </h2>
             <p>
               <BsQuote className='icon' />
-              प्रविधिको विकास संगै एक आपसमा जोडिन सजिलो भएको छ, सामाजिक संजाल संगै समाज परिवर्तनकारी सोच सँग सुरु भएको पाहुनाघरको विचार राम्रो लाग्यो
+              प्रविधिको विकास संगै एक आपसमा जोडिन सजिलो भएको छ, सामाजिक संजाल संगै समाज परिवर्तनकारी सोच सँग सुरु भएको पाहुनाघरको विचार राम्रो लाग्यो ।
             </p>
-            <li>
+            <li className='star'>
               <MdOutlineStarPurple500 />
               <MdOutlineStarPurple500 />
               <MdOutlineStarPurple500 />
@@ -51,7 +51,7 @@ const Response = () => {
               <BsQuote className='icon' />
               घरमै बसेर उधमशीलता साथै अतिथि सत्कारले देशको कुना कुनामा लुकेर रहेको स्थानमा पर्यटन प्रबर्दन गर्नमा ठुलो भूमिका खेल्दछ ।
             </p>
-            <li>
+            <li className='star'>
               <MdOutlineStarPurple500 />
               <MdOutlineStarPurple500 />
               <MdOutlineStarPurple500 />
@@ -72,7 +72,7 @@ const Response = () => {
               <BsQuote className='icon' />
               घुम्ने भनेको आफुलाई मन पर्ने ठाउँ हो, सबै ठाउँमा पाहुनाघर भएको खण्डमा जो सुकै पनि जुनसुकै स्थान पुग्न, त्यसबारेमा जानकारी लिन सक्नेछन ।
             </p>
-            <li>
+            <li className='star'>
               <MdOutlineStarPurple500 />
               <MdOutlineStarPurple500 />
               <MdOutlineStarPurple500 />

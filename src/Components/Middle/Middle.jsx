@@ -1,17 +1,17 @@
-import React from 'react';
-import './Middle.css';
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaChevronLeft } from "react-icons/fa";
-import { FaChevronRight } from "react-icons/fa";
+import '../../index';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
+// Import your images
 import Achamaghar from '../../assests/icons/achammako-ghar.png';
 import bhansaghar from '../../assests/icons/bhansa-ghar.png';
 import chalchitra from '../../assests/icons/chalchitra-ghar.png';
 import charaghar from '../../assests/icons/chara-ghar.png';
 import chitra from '../../assests/icons/chitra-ghar.png';
 import farm from '../../assests/icons/farm-house.png';
-import goth from '../../assests/icons/goth-ghar.png';
 import kaala from '../../assests/icons/kaala-ghar.png';
 import sangit from '../../assests/icons/sangit-ghar.png';
 import dinner from '../../assests/icons/dinner-ghar.png';
@@ -25,96 +25,70 @@ import sriyog from '../../assests/supported-by/sriyog-logo.png';
 
 const settings = {
   infinite: true,
-  speed: 2000,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  slidesToShow: 5,
+  speed: 500,
+  slidesToShow: 11,
   slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
   arrows: false,
 };
 
-const Middle = () => {
-  return (
-    <div className='houses'>
-      <div className='houses-icon'>
-        <FaChevronLeft className='left' />
-        <Slider {...settings}>
-          <div className="icon-item">
-            <a href="#">
-              <img src={Achamaghar} alt="achammaghar" />
-              <p className="icon-title">अचम्मको घर</p>
-            </a>
-            <a href="#">
-              <img src={bhansaghar} alt='bhansaghar' />
-              <p className="icon-title">भान्सा घर</p>
-            </a>
-            <a href="#">
-              <img src={kaala} alt='kaala' />
-              <p className="icon-title">कला घर</p>
-            </a>
-            <a href="#">
-              <img src={chalchitra} alt='chalchitra' />
-              <p className="icon-title">चलचित्र घर</p>
-            </a>
-            <a href="#">
-              <img src={charaghar} alt='charaghar' />
-              <p className="icon-title">चरा घर</p>
-            </a>
-            <a href="#">
-              <img src={farm} alt='farm' />
-              <p className="icon-title">फार्म घर</p>
-            </a>
-            <a href="#">
-              <img src={chitra} alt='chitra' />
-              <p className="icon-title">चित्र घर</p>
-            </a>
-            <a href="#">
-              <img src={sangit} alt='sangit' />
-              <p className="icon-title">संगीत घर</p>
-            </a>
-            <a href="#">
-              <img src={dinner} alt='dinner' />
-              <p className="icon-title">डिनर घर</p>
-            </a>
-            <a href="#">
-              <img src={sambad} alt='sambad' />
-              <p className="icon-title">गोठ घर</p>
-            </a>
-            <a href="#">
-              <img src={jaato} alt='goth' />
-              <p className="icon-title">गोठ घर</p>
-            </a>
-            <a href="#">
-              <img src={sapana} alt='goth' />
-              <p className="icon-title">गोठ घर</p>
-            </a>
-            <a href="#">
-              <img src={khaja} alt='goth' />
-              <p className="icon-title">गोठ घर</p>
-            </a>
-            <a href="#">
-              <img src={maha} alt='goth' />
-              <p className="icon-title">गोठ घर</p>
-            </a>
-          </div>
-        </Slider>
-        <FaChevronRight className='right' />
-      </div>
-      <div className='Sponser-ad'>
-        <div className='sponsers'>
-          <a href="http://baskotaconsulting.com.np" target="_blank" rel="noopener noreferrer"><img src={baskota} alt='baskota' /></a>
-          <a href="https://sriyog.com" target="_blank" rel="noopener noreferrer"  > <img src={sriyog} alt="sriyog" /></a>
+const icons = [
+  { src: charaghar, title: 'चरा घर' },
+  { src: dinner, title: 'डिनर घर' },
+  { src: Achamaghar, title: 'अचम्म घर' },
+  { src: khaja, title: 'खाजा घर' },
+  { src: bhansaghar, title: 'भान्सा घर' },
+  { src: maha, title: 'हस्य घर' },
+  { src: chalchitra, title: 'चलचित्र घर' },
+  { src: jaato, title: 'टिकी घर' },
+  { src: sambad, title: 'गोठ घर' },
+  { src: farm, title: 'फार्म घर' },
+];
 
-        </div>
+const Middle = () => {
+  const sliderRef = useRef(null);
+
+  return (
+    <div className='py-8'>
+      <div className='relative w-full p-8'>
+        <FaChevronLeft
+          className='absolute left-0 top-1/2 -translate-y-1/2 text-gray-700 text-3xl cursor-pointer hover:text-black active:scale-90 z-10'
+          onClick={() => sliderRef.current.slickPrev()}
+        />
+        <Slider ref={sliderRef} {...settings} className='w-full p-4'>
+          {icons.map((icon, index) => (
+            <div key={index} className='flex flex-col items-center gap-1 '>
+              <img
+                src={icon.src}
+                alt={icon.title}
+                className='w-10 h-10 object-contain grayscale-[100] gap-1'
+              />
+              <p className="text-black text-sm mt-2">{icon.title}</p>
+            </div>
+          ))}
+        </Slider>
+        <FaChevronRight
+          className='absolute right-0 top-1/2 -translate-y-1/2 text-gray-700 text-3xl cursor-pointer hover:text-black active:scale-90 z-10'
+          onClick={() => sliderRef.current.slickNext()}
+        />
       </div>
-      <div className='secTitle'>
-        <h>लोकप्रिय गन्तव्यहरू</h>
+      <div className='flex justify-center items-center gap-12 p-4 bg-gray-100 rounded-xl w-full shadow-sm'>
+        <a href="http://baskotaconsulting.com.np" target="_blank" rel="noopener noreferrer">
+          <img src={baskota} alt='baskota' className='h-20 object-contain' />
+        </a>
+        <a href="https://sriyog.com" target="_blank" rel="noopener noreferrer">
+          <img src={sriyog} alt="sriyog" className='h-20 object-contain' />
+        </a>
       </div>
-      <div className='subject'>
-        नेपालमा लुकेका कुनाहरू अवलोकन गर्नुहोस् । #Freedom of Living.
+
+      <div className='text-center mb-6'>
+        <h2 className='text-2xl font-bold'>लोकप्रिय गन्तव्यहरू</h2>
+        <p className='text-gray-500 mt-2'>नेपालमा लुकेका कुनाहरू अवलोकन गर्नुहोस् । #Freedom of Living.</p>
       </div>
+
     </div>
-  )
+  );
 };
 
 export default Middle;
